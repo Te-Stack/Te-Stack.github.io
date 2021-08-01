@@ -8,339 +8,124 @@
     text-decoration: none;
 }
 
-.hero {
-    background: rgba(255, 169, 135, 0.1);
-    height: 100vh;
-}
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 10px;
-}
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .bar2 {
-    opacity: 0;
-}
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 90px 20px 90px;
-}
-.btns {
-    display: flex;
-    align-items: center;
-}
-.rhs {
-    display: flex;
-    align-items: center;
-}
-ul.nav {
-    display: flex;
-    align-items: center;
-}
-.nav-links{
-    color:#312F2F;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+
+
+/* Main Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
 }
 
-.nav-links:hover{
-    background-color: #1282A2;
-    border-radius: 4px;
-    color: #FEFCFB;
-    transition: all 0.2s ease-out;
+h1, h2, h3 {
+    padding-bottom: 20px;
 }
+
+p {
+    margin: 10px 0;
+}
+
 ul {
-    list-style-type: none;
+    list-style: none;
 }
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: #333;
 }
-button {
-    cursor: pointer;
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    padding: 1.25rem;
 }
-button.modeBtn {
-    background-color: #FFFEFC;
-    border: 0;
-    outline: 0;
-    box-shadow: 0px 3px 7px rgba(72, 4, 3, 0.05);
-    padding: 10px 10px 7px 10px;
-    border-radius: 20px;
+
+.navbar .logo {
+    padding: 1.5rem;
+    font-size: 2rem;
 }
+
+.navbar .logo a {
+    transition: color 0.4s ease-in-out;
+}
+
+.navbar .logo a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .nav-menu {
+    display: flex;
+}
+
+.nav-menu .nav-item a {
+    padding: 1.25rem;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-menu .nav-item a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 .hamburger {
     display: none;
 }
 
-.mobile-nav {
-    display: none;
-    align-items: center;
-    text-align: center;
-    color: #480403;
-    padding-top: 1px;
-    background: rgba(255, 169, 135, 0.04);
-    padding-bottom: 40px;
-    height: 100vh;
-}
-.mobile-nav li {
-    margin-top: 60px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.hide {
-    display: block !important;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
-.head {
-    box-shadow: 0px 4px 10px rgba(18, 18, 18, 0.05);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #FFFBF9;
-    z-index: 100;
-}
-header {
-    padding: 10px 100px;
-    background: rgba(255, 169, 135, 0.04);
-}
-
-
-/* Media Queries */
-
-/* For Large screens */
-@media (min-width: 1900px) {
-    .head {
-        box-shadow: 0px 4px 10px rgba(18, 18, 18, 0.05);
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
         position: fixed;
-        top: 0;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
         width: 100%;
-        background: #FFFBF9;
-        z-index: 100;
-        height: 10vh;
+        border-radius: 3px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        background-color: #f4f4f4;
     }
-    header {
-        padding: 10px 100px;
-        background: rgba(255, 169, 135, 0.04);
+
+    .nav-menu.active {
+        left: 0;
     }
-    
-}
 
-/* For Big Tablet */
+    .nav-item {
+        margin: 1.5rem 0;
+    }
 
-
-/* For Tablet */
-@media (max-width: 768px) and (min-width: 500px) {
     .hamburger {
         display: block;
+        cursor: pointer;
     }
-    .navs {
-        display: none;
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
-    header {
-        padding: 15px 50px;
-        background: rgba(255, 169, 135, 0.04);
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
-    .partiku {
-        height: 100vh;
-    }
-    .head {
-        box-shadow: 0px 4px 10px rgba(18, 18, 18, 0.05);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: #FFFBF9;
-        z-index: 100;
-    }
-    button.modeBtn {
-        margin-right: 80px;
-    }
-    .bottom-hero {
-        display: block;
-        padding-left: 50px;
-        margin-top: 90px;
-        padding-top: 150px;
-    }
-    .right-part {
-        display: none;
-    }
-    h1.top {
-        font-size: 45px;
-        margin: 30px 0px;
-        position: relative;
-    }
-    h1.top::after {
-        width: 65%;
-        bottom: 10px;
-        position: absolute;
-    }
-    p.title {
-        font-size: 25px;
-    }
-    p.brief {
-        width: 100%;
-        font-size: 20px;
-        margin: 30px 0px 35px 0px;
-    }
-    button.resume, button.view {
-        font-size: 18px;
-    }
-    .about{
-        display: block;
-        padding: 100px 0px 100px 50px;
-        font-size: 18px;
-    }
-    h2::after {
-        left: 25%;
-        bottom: 15px;
-    }
-    .set {
-        font-size: 23px !important;
-    }
-    img.abt {
-        height: 430px;
-        margin-top: 50px;
-    }
-    .rightt .btn {
-        top: 87.2%;
-        left: 23%;
-        transform: translate(2%, -50%);
-        -ms-transform: translate(2%, -50%);
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-
-
-/* For Mobile phones */
-@media (max-width: 540px){
-    .hamburger {
-        display: block;
-    }
-    .navs {
-        display: none;
-    }
-    header {
-        padding: 15px 25px 15px 25px;
-        background: rgba(255, 169, 135, 0.04);
-    }
-    .head {
-        box-shadow: 0px 4px 10px rgba(18, 18, 18, 0.05);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: #FFFBF9;
-        z-index: 100;
-    }
-    button.modeBtn {
-        margin-right: 35px;
-    }
-    .bottom-hero {
-        display: block;
-        padding-left: 25px;
-        padding-right: 20px;
-        margin-top: 90px;
-        padding-top: 70px;
-    }
-    .right-part {
-        display: none;
-    }
-    img.logo {
-        height: 65px;
-    }
-    h1.top {
-        font-size: 35px;
-        margin: 30px 0px;
-    }
-    h1.top::after {
-        width: 96%;
-        bottom: 6px;
-    }
-    p.title {
-        font-size: 17px;
-    }
-    p.brief {
-        width: 100%;
-        font-size: 19px;
-        margin: 25px 0px 35px 0px;
-    }
-    .glowing ul li {
-        width: 12vmin;
-        height: 12vmin;
-    }
-    .fab {
-        font-size: 6vmin;
-    }
-    .about{
-        display: block;
-        padding: 20px 0px 100px 25px;
-    }
-    h2::after {
-        left: 38%;
-    }
-    ul.skill {
-        display: none;
-    }
-    ul.skillmb {
-        display: block;
-    }
-    .flex {
-        justify-content: space-between;
-    }
-    img.abt {
-        height: 350px;
-        margin-top: 30px;
-    }
-    .rightt .btn {
-        top: 86.1%;
-        left: 27.5%;
-        transform: translate(2%, -50%);
-        -ms-transform: translate(2%, -50%);
-    }
-   
-}
-
-@media (max-width: 600px) and (min-width: 540px) {
-    .hero {
-        height: 100vh;
-    }
-    h1.top::after {
-        width: 71%;
-        bottom: 7px;
-    }
-    .glowing ul li {
-        width: 10vmin;
-        height: 10vmin;
-    }
-    .fab {
-        font-size: 5.7vmin;
-    }
-    .about {
-        padding: 50px 25px;
-        height: inherit;
-    }
-    .set {
-        font-size: 17px !important;
-    }
-    button.resume, button.view {
-        font-size: 14px;
-    }
-    .rightt .btn {
-        top: 86.2%;
-        left: 26%;
-    }
-}
-

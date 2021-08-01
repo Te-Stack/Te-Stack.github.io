@@ -1,27 +1,18 @@
-// Elements selected from html
-let menu = document.querySelector('.hamburger');
-let navs = document.querySelector('.mobile-nav');
-let mbNavLi = document.querySelectorAll('.mobile-nav li');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", mobileMenu);
 
-menuToggle = () => {
-    menu.classList.toggle('change');
-    navs.classList.toggle('hide');
-    if (navs.classList.contains('nonezz')){
-        navs.classList.add('hide')
-        navs.classList.remove('nonezz');
-    }
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
-// Close mobile menu on link click
-closeOnNavClick = () => {  
-    setTimeout(()=> {
-        menu.classList.toggle('change');
-        navs.classList.add('nonezz');
-    }, 500) 
-}
+const navLink = document.querySelectorAll(".nav-link");
 
-menu.addEventListener('click', menuToggle);
-mbNavLi.forEach((li)=> {
-    li.addEventListener('click', closeOnNavClick)
-})
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
