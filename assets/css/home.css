@@ -1,5 +1,6 @@
 #Home{
-    height: 70vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #FEFCFB;
     display: flex;
     flex-direction: column;
@@ -10,23 +11,9 @@
     margin-left:0rem;
 }
 
-
-.Ibtn{
-    display: block;
-    float: left;
-    margin-left: 5rem;
-    color: #1282A2;
-    width: 2vw;
-    height: 5vh;
-    border: none;
-    background-color: #FEFCFB;
-   font-size: 1.4rem;
-}
-
-
 .btn{
     width: 20vw;
-    height: 10vh;
+    height: 60px;
     background-color:#1282A2 ;
     color: #FEFCFB;
     font-size: 1.2rem;
@@ -37,58 +24,34 @@
     color: #FEFCFB;
 }
 
-
 .btn:hover{
     opacity: 0.9;
-    color:#312F2F;
+    width: 22vw;
+    height: 60px;
+    background-color: var(--WhiteColor);
+    border: 1px solid var(--BlueColor);
+    border-radius: 1rem;
 }
+
 
 @media screen and (max-width:1024px){
     #Home{
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding-top: 2rem;
+    padding-bottom: 2rem;
     
     }
     #Home h1{
         margin-left: 0;
     }
     
-.Ibtn{
-    display: block;
-    float: left;
-    margin-left: 3rem;
-    color: #1282A2;
-    width: 2vw;
-    height: 3vh;
-    border: none;
-    background-color: #FEFCFB;
-   font-size: 1.4rem;
-}
 
-    .btn{
-        width: 20vw;
-        height: 4vh;
-        background-color:#1282A2 ;
-        font-size: 1rem;
-
-    }
-    
-    .btn:hover{
-        opacity: 0.9;
-        width: 22vw;
-        height: 5vh;
-    }
-    
-    
 }
 
 
 @media screen and (max-width:480px){
     #Home{
-        height: 60vh;
+        padding-top: 5rem;
+        padding-bottom: 5rem; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -111,7 +74,7 @@
     }
     .btn{
         width: 42vw;
-        height: 7vh;
+        height: 60px;
         background-color:#1282A2 ;
         font-size: 0.8rem;
     }
@@ -119,7 +82,9 @@
     .btn:hover{
         opacity: 0.9;
         width: 44vw;
-        height: 8vh;
+        height: 60px;
+        background-color: var(--WhiteColor);
+        border: 1px solid var(--BlueColor);
     }
     
    
