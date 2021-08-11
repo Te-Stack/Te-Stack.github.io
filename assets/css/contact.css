@@ -1,0 +1,173 @@
+.Contact{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #FEFCFB;
+}
+
+.contact-border{
+    width: 15vw;
+    border-bottom:0.8rem solid #1282A2;
+    margin-left: 5rem;
+}
+
+.send-border{
+    width: 18vw;
+    border-bottom: 0.7rem solid #1282A2;
+}  
+
+input{
+    background-color: #c4c4c4;
+    border: none;
+    width: 18vw;
+    height: 65px;
+}
+
+.Contact a{
+    text-decoration: none;
+    color: #1282A2;
+}
+
+textarea{
+    background-color: #c4c4c4;
+    border: none;
+    width: 27vw;
+    height: 75px;
+}
+
+.Think{
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+.reach{
+    font-size: 1.3rem;
+}
+.alt{
+    color: #1282A2;
+}
+
+.move{
+    margin-left: 4rem;
+    margin-right: 2.5rem;
+}
+
+@media screen and (max-width:1024px){
+    .Contact{
+        padding-top: 5rem;
+    padding-bottom: 5rem;
+    }
+    
+    .contact-border{
+        width: 18vw;
+        border-bottom:0.8rem solid #1282A2;
+        margin-left: 3rem;
+    }
+    
+    .send-border{
+        width: 18vw;
+        border-bottom: 0.7rem solid #1282A2;
+    }
+    
+    input{
+        background-color: #c4c4c4;
+        border: none;
+        width: 22vw;
+        height: 40px;
+    }
+    
+    textarea{
+        background-color: #c4c4c4;
+        border: none;
+        width: 30vw;
+        height: 45px;
+    }
+    
+    .Think{
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+    .reach{
+        font-size: 1.1rem;
+    }
+    .alt{
+        color: #1282A2;
+    }
+
+    .move{
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:830px) {
+    .contact-border{
+        width: 22vw;
+        border-bottom:0.8rem solid #1282A2;
+        margin-left: 1rem;
+    }
+    .Think{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+     
+    .send-border{
+        width: 22vw;
+        border-bottom: 0.7rem solid #1282A2;
+    }
+
+    .move{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+   
+    
+    
+}
+
+
+@media screen and (max-width:480px){
+    .Contact{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .contact-border{
+        width: 50vw;
+        border-bottom:0.8rem solid #1282A2;
+        margin-left: 1rem;
+    }
+    
+    .send-border{
+        width: 60vw;
+        border-bottom: 0.7rem solid #1282A2;
+    }
+    
+    input{
+        background-color: #c4c4c4;
+        border: none;
+        width: 70vw;
+        height: 75px;
+        margin-top: 0.8rem;
+    }
+    
+    textarea{
+        background-color: #c4c4c4;
+        border: none;
+        width: 90vw;
+        height: 80px;
+    }
+    
+    .Think{
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+    .reach{
+        font-size: 1.1rem;
+    }
+    .move{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
