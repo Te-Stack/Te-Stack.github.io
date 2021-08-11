@@ -1,6 +1,6 @@
 #Home{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #FEFCFB;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@
 
 @media screen and (max-width:1024px){
     #Home{
-        padding-top: 2rem;
+        padding-top: 5rem;
     padding-bottom: 2rem;
     
     }
@@ -68,7 +68,7 @@
 
 @media screen and (max-width:480px){
     #Home{
-        padding-top: 5rem;
+        padding-top: 8rem;
         padding-bottom: 5rem; 
         display: flex;
         flex-direction: column;
