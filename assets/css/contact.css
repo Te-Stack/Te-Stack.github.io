@@ -1,4 +1,4 @@
-.Contact{
+#Contact{
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: #FEFCFB;
@@ -51,7 +51,7 @@ textarea{
 }
 
 @media screen and (max-width:1024px){
-    .Contact{
+    #Contact{
         padding-top: 5rem;
     padding-bottom: 5rem;
     }
@@ -126,7 +126,7 @@ textarea{
 
 
 @media screen and (max-width:480px){
-    .Contact{
+    #Contact{
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
