@@ -22,7 +22,7 @@ input{
     height: 65px;
 }
 
-.Contact a{
+#Contact a{
     text-decoration: none;
     color: #1282A2;
 }

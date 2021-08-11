@@ -13,3 +13,8 @@ html {
     --WhiteColor:#FEFCFB;
     --BlackColor:#312F2F;
 }
+
+a{
+    text-decoration-color: none;
+    
+}
