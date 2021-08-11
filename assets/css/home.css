@@ -46,7 +46,7 @@
 
     .btn{
         width: 20vw;
-        height: 30px;
+        height: 60px;
         background-color:#1282A2 ;
         color: #FEFCFB;
         font-size: 1.2rem;
@@ -55,7 +55,7 @@
     .btn:hover{
         opacity: 0.9;
         width: 22vw;
-        height: 30px;
+        height: 60px;
         background-color: var(--WhiteColor);
         border: 1px solid var(--BlueColor);
         border-radius: 1rem;
@@ -80,7 +80,7 @@
     }
         
     .btn{
-        width: 82vw;
+        width: 62vw;
         height: 60px;
         background-color:#1282A2 ;
         font-size: 0.8rem;
@@ -88,7 +88,7 @@
     
     .btn:hover{
         opacity: 0.9;
-        width: 84vw;
+        width: 64vw;
         height: 60px;
         background-color: var(--WhiteColor);
         border: 1px solid var(--BlueColor);
