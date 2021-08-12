@@ -88,4 +88,6 @@ function init(){
     const wait = txtElement.getAttribute('data-wait')
     //Init TypeWriter
     new TypeWriter(txtElement,words,wait)
+
+    
 }
