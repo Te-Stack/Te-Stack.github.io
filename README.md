@@ -5,7 +5,7 @@
 
 👤 **Quincy Oghenetejiri**
 
-- Website:[Quincy](www.quincyoghenetejiri.me)
+- Website:[Quincy](https://quincyoghenetejiri.me)
 - Twitter: [@Quincyoghenex](https://twitter.com/Quincyoghenex)
 - Github: [@Te-Stack](https://github.com/Te-Stack)
 - LinkedIn: [@Quincy-Oghenetejiri](https://linkedin.com/in/quincy-oghenetejiri)
