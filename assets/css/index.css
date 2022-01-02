@@ -1,10 +1,23 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     
 }
+
+body.light {
+    background-color: var(--WhiteColor);
+    color: var(--BlackColor);
+}
+
+body.dark {
+    background-color: var(--BlackColor);
+    color: var(--WhiteColor);
+}
+
+
+
 html {
     scroll-behavior: smooth;
 }
