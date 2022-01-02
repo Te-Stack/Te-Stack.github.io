@@ -6,15 +6,6 @@ body {
     
 }
 
-body.light {
-    background-color: var(--WhiteColor);
-    color: var(--BlackColor);
-}
-
-body.dark {
-    background-color: var(--BlackColor);
-    color: var(--WhiteColor);
-}
 
 
 
