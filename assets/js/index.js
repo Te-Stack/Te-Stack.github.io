@@ -1,5 +1,6 @@
 const cursor = document.querySelector(".cursor");
 const a = document.querySelectorAll("a");
+const btn = document.querySelector("button");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
