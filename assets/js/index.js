@@ -97,8 +97,8 @@ class TypeWriter{
   }
 
   document.addEventListener("mousemove", (e) => {
-    cursor.style.top = e.clientY - 10 + "px";
-    cursor.style.left = e.clientX - 10 + "px";
+    cursor.style.top = e.clientY - 5 + "px";
+    cursor.style.left = e.clientX - 5 + "px";
   });
   
   a.forEach((a) => {
